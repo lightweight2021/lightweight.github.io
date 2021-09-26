@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>light weight</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.fullPage.min.js"></script>
+</head>
+<style>
+    .logo {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        left: 100px;
+        top: 10px;
+        list-style-type: none;
+        z-index: 70;
+        color: #fff;
+        font-family: BarlowCondensed-ExtraBold;
+    }
+
+    #menu {
+        font-family: BarlowCondensed-ExtraBold;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        right: 100px;
+        top: 10px;
+        list-style-type: none;
+        z-index: 70;
+    }
+
+    #menu li {
+        float: left;
+        margin: 0 10px 0 0;
+        font-size: 14px;
+    }
+
+    #menu a {
+        float: left;
+        padding: 10px 20px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    #menu .active a {
+        color: #fff;
+    }
+
+    .section {
+        text-align: center;
+        font: 50px "Microsoft Yahei";
+        color: #fff;
+        background-color: #000;
+    }
+</style>
+
+<body>
+    <div>
+        <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">主页</a></li>
+            <li data-menuanchor="page2"><a href="#page2">产品</a></li>
+            <li data-menuanchor="page3"><a href="#page3">公司产品</a></li>
+            <li data-menuanchor="page4"><a href="#page4">加入我们</a></li>
+        </ul>
+    </div>
+    <div class="logo">轻度科技</div>
+    <div id="dowebok">
+        <div class="section">
+            <h3>第一屏</h3>
+        </div>
+        <div class="section">
+            <h3>第二屏</h3>
+        </div>
+        <div class="section">
+            <h3>第三屏</h3>
+        </div>
+        <div class="section">
+            <h3>第四屏</h3>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        $('#dowebok').fullpage({
+            sectionsColor: ['#000', '#000', '#000', '#000'],
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            menu: '#menu'
+        });
+
+        $(window).resize(function () {
+            autoScrolling();
+            console.log($(window).height())
+        });
+
+        function autoScrolling() {
+            var $ww = $(window).width();
+            if ($ww < 1024) {
+                $.fn.fullpage.setAutoScrolling(false);
+            } else {
+                $.fn.fullpage.setAutoScrolling(true);
+            }
+        }
+        autoScrolling();
+    });
+
+
+</script>
+
+</html>

@@ -13,6 +13,16 @@
     <script src="./js/jquery.fullPage.min.js"></script>
 </head>
 <style>
+    @media screen and (max-width: 767px) {
+        body {
+            width: 100%;
+        }
+
+        .product .font_company {
+            font-size: 60px;
+        }
+    }
+
     .logo {
         margin: 0;
         padding: 0;
@@ -23,6 +33,16 @@
         z-index: 70;
         color: #fff;
         font-family: BarlowCondensed-ExtraBold;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .logo img {
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
     }
 
     #menu {
@@ -34,12 +54,12 @@
         top: 10px;
         list-style-type: none;
         z-index: 70;
+        font-size: 18px;
     }
 
     #menu li {
         float: left;
         margin: 0 10px 0 0;
-        font-size: 14px;
     }
 
     #menu a {
@@ -67,22 +87,152 @@
             <li data-menuanchor="page1" class="active"><a href="#page1">主页</a></li>
             <li data-menuanchor="page2"><a href="#page2">产品</a></li>
             <li data-menuanchor="page3"><a href="#page3">公司产品</a></li>
-            <li data-menuanchor="page4"><a href="#page4">加入我们</a></li>
+            <li data-menuanchor="page6"><a href="#page6">加入我们</a></li>
         </ul>
     </div>
-    <div class="logo">轻度科技</div>
+    <div class="logo"><img src="./img/logo.webp" alt=""> 轻度科技</div>
     <div id="dowebok">
         <div class="section">
-            <h3>第一屏</h3>
+            <div class="home">
+                <div class="text">
+                    <h1>让生活充满简单快乐</h1>
+                    <div class="desc">
+                        Human-intelligence-oriented, dedicated to provide development and operation services for
+                        mobile
+                        Internet application technologies
+
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="section">
-            <h3>第二屏</h3>
+            <div class="product">
+                <div class="font_company">COMPANY'S PRODUCT</div>
+                <div class="title">公司产品</div>
+                <ul>
+                    <li>
+                        <div class="bg" style="background-image: url(./img/fx.webp);">
+                        </div>
+                        <div class="logo">
+                            <img src="./img/fx-icon.webp" alt="">
+                            <div class="name">FX MASTER</div>
+                        </div>
+
+                        <div class="box">
+                            <div class="name">FX Master</div>
+                            <div class="pro_desc">FX Master 是⼀款实时特效视频拍摄应⽤，结合 AR、3D 等技术让视频画⾯更加震撼、有趣，⽬前 已在 Google Play 和
+                                App Store 上线，全球⽤⼾数量 4M+。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg" style="background-image: url(./img/amazart.webp);">
+                        </div>
+                        <div class="logo">
+                            <img src="./img/amazart-icon.webp" alt="">
+                            <div class="name">AMAZART</div>
+                        </div>
+
+                        <div class="box">
+                            <div class="name">Amazart</div>
+                            <div class="pro_desc">FX Master 是⼀款实时特效视频拍摄应⽤，结合 AR、3D 等技术让视频画⾯更加震撼、有趣，⽬前 已在 Google Play 和
+                                App Store 上线，全球⽤⼾数量 4M+。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg" style="background-image: url(./img/facee.webp);">
+                        </div>
+                        <div class="logo">
+                            <img src="./img/facee-icon.webp" alt="">
+                            <div class="name">FACEE</div>
+                        </div>
+                        <div class="box">
+                            <div class="name">Facee</div>
+                            <div class="pro_desc">FX Master 是⼀款实时特效视频拍摄应⽤，结合 AR、3D 等技术让视频画⾯更加震撼、有趣，⽬前 已在 Google Play 和
+                                App Store 上线，全球⽤⼾数量 4M+。</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="section">
-            <h3>第三屏</h3>
+            <div class="page3">
+                <div class="bg"></div>
+                <div class="font_gallery">PRODUCT GALLERY
+                </div>
+                <div class="title">产品介绍</div>
+            </div>
+
         </div>
         <div class="section">
-            <h3>第四屏</h3>
+            <div class="page4">
+                <div class="bg"></div>
+                <div class="content">
+                    <div>
+                        <div class="font_gallery">PRODUCT GALLERY
+                        </div>
+                        <div class="title">公司优势</div>
+                        <div class="txt">1、强⼤的产品团队：我们采⽤产品驱动模式，产品岗是项⽬的核⼼。公司产品经理全部来⾃武⼤、华
+                            科、伦敦政经、法国勃⾉第、法国雷恩等国内外⼀流院校，加⼊产品团队让你感受“⾼⼿过招”的精 彩；
+                            <br />2、尖端的技术应⽤：我们的研发团队将⼈像抠图、姿态识别等热⻔AI技术融⼊App开发中，在海外掀 起新玩法热潮。通过我们的App产出的作品，在Instagram、
+                            TikTok、YouTube、Facebook上被⼴泛 发布，并深受⽤⼾好评，引起⼤量转发及互动；
+                            <br />3、简单⾼效管理：团队成员以95后为主体，氛围活跃，⽆沟通压⼒；上下班⽆打卡要求，⾃我驱 动、结果导向。
+                        </div>
+                    </div>
+                    <img src="./img/pic.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="page5">
+                <div class="intr">
+                    <ul>
+                        <li>
+                            <div class="icon"><img src="./img/icon-1.webp" alt=""></div>
+                            <div class="name">人工智能</div>
+                            <div class="desc">
+                                人工智能是研究使计算机来模拟人的某些思维过程和智能行为（如学习、推理、思考、规划等）的学科，主要包括计算机实现智能的原理、制造类似于人脑智能的计算机，使计算机能实现更高层次的应用。人工智能将涉及到计算机科学、心理学、哲学和语言学等学科。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="./img/icon-2.webp" alt=""></div>
+                            <div class="name">运算中心</div>
+                            <div class="desc">
+                                计算中心是以提供计算机服务为主的机构。在高等学校中，主要任务为：根据教学计划的要求接受并指导学生上机实习。开展有关计算机的教学和培训活动；向教学、科研、管理等有关人员提供科学计算、数据处理、情报资料检索、管理信息系统等各种计算机服务
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="./img/icon-3.svg" alt=""></div>
+                            <div class="name">人脸识别</div>
+                            <div class="desc">
+                                人脸识别，是基于人的脸部特征信息进行身份识别的一种生物识别技术。用摄像机或摄像头采集含有人脸的图像或视频流，并自动在图像中检测和跟踪人脸，进而对检测到的人脸进行脸部识别的一系列相关技术，通常也叫做人像识别、面部识别。
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="introduction">
+                        <div class="font_gallery">COMPANY INTRODUCTION
+                        </div>
+                        <div class="title">企业介绍</div>
+                    </div>
+                </div>
+                <div class="txt">
+                    轻度科技是⼀家⽴⾜于海外市场、以⼈⼯智能为导向、专⻔提供移动互联⽹应⽤技术的开发与运 营服务的公司。 结合计算机视觉识别技术的应⽤，公司专⻔开设⼀条以APP为载体、关于图⽚/视频处理的产品
+                    线，打造顶尖型出海⼯具类产品。 除⼯具类产品线外，公司还在社交领域打造了⼀个以App和⽹⻚端为载体、提供咨询服务“链
+                    接”的海外社交平台，将有星座、情感等咨询诉求的⽤⼾“链接”到提供服务的专家。结合⼈⼯智能 的应⽤，将打造⼼理聊天机器⼈/⼼理专家机器⼈作为公司未来的发展⽅向。
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="page6">
+                <div class="top">
+                    <div class="title">加入轻度科技，创造更多快乐</div>
+                    <div class="mail">简历投递邮箱：hr@lightgogogo.com</div>
+                </div>
+                <div class="footer">
+                    <div>Copyright@2018-2022版权所有 武汉轻度科技有限公司</div>
+                    <div>地址：武汉市洪山区关山大道泛悦城T2写字楼10层</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -90,7 +240,7 @@
     $(function () {
         $('#dowebok').fullpage({
             sectionsColor: ['#000', '#000', '#000', '#000'],
-            anchors: ['page1', 'page2', 'page3', 'page4'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
             menu: '#menu'
         });
 

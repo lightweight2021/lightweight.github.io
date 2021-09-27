@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>light weight</title>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fullPage.min.js"></script>
+
 </head>
 <style>
     @media screen and (max-width: 767px) {
@@ -105,7 +104,6 @@
                         Human-intelligence-oriented, dedicated to provide development and operation services for
                         mobile
                         Internet application technologies
-
                     </div>
                 </div>
 
@@ -243,6 +241,8 @@
         </div>
     </div>
 </body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.fullPage.min.js"></script>
 <script>
     $(function () {
         $('#dowebok').fullpage({
@@ -255,7 +255,6 @@
             autoScrolling();
             console.log($(window).height())
         });
-
         function autoScrolling() {
             var $ww = $(window).width();
             if ($ww < 1024) {

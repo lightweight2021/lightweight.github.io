@@ -43,11 +43,12 @@ html,body,ul,li,p{
     margin-top: 35px;
     float: right;
     font-family: STHeiti;
-    color: #ffffffa1;
+    color: #ffffff;
     font-size: 14px;
     width: 320px;
     line-height: 1.2;
     text-align: right;
+    line-height: 22px;
 }
 .product, .page3{
     width: 100%;
@@ -82,6 +83,7 @@ html,body,ul,li,p{
     position: relative;
     margin-right: 18px;
     cursor: pointer;
+    padding-bottom: 13px;
 }
 .product ul li:hover .logo{
     display: flex;
@@ -194,7 +196,7 @@ html,body,ul,li,p{
 .page5 .intr{
     display: flex;
     align-items: flex-end;
-    margin-top: 450px;
+    margin-top: 300px;
 }
 .page5 .intr ul{
     display: flex;
@@ -246,12 +248,14 @@ html,body,ul,li,p{
     font-size: 14px;
     color: #fff;
     padding: 60px 200px;
+    line-height: 40px;
 }
 .page6{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .page6 .top{
     flex: 1;
@@ -284,5 +288,20 @@ html,body,ul,li,p{
     font-size: 14px;
     color: #fff;
 }
-
+.page6 .font_join{
+    position: absolute;
+    top: 41px;
+    left: 107px;
+    font-weight: 600;
+    text-align: right;
+    font-size: 100px;
+    letter-spacing: -5px;
+    opacity: 0.5;
+}
+.page6 .font_txt{
+    position: absolute;
+    font-size: 60px;
+    left: 203px;
+    top: 120px;
+}
 

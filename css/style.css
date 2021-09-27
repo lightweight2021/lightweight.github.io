@@ -193,11 +193,11 @@ html,body,ul,li,p{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 .page4 .content img{
     width: 400px;
     height: 500px;
+    margin-left: 200px;
 }
 .page4  .txt{
     width: 500px;
@@ -223,7 +223,7 @@ html,body,ul,li,p{
     height: auto;
     padding: 20px;
     text-align: left;
-    min-height: 350px;
+    min-height: 250px;
 }
 .page5 .intr ul li .icon{
     width: 100%;
@@ -260,7 +260,7 @@ html,body,ul,li,p{
 .page5 .txt{
     font-size: 14px;
     color: #fff;
-    padding: 60px 200px;
+    padding: 60px 190px;
     line-height: 40px;
 }
 .page6{
@@ -287,6 +287,10 @@ html,body,ul,li,p{
 .page6 .top .mail{
     font-size: 24px;
     margin-top: 31px;
+}
+.page6 .top .mail a{
+    color: #fff;
+    text-decoration: none;
 }
 .page6 .footer{
     height: 116px;
